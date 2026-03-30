@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RADAR Scanner — ¿En qué nivel de madurez IA está tu empresa?</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HERO / INTRO -->
+    <div id="screen-intro" class="screen active">
+        <div class="container">
+            <div class="badge">RADAR SCANNER</div>
+            <h1>¿En qué nivel de madurez IA<br>está tu empresa?</h1>
+            <p class="subtitle">5 preguntas. 2 minutos. Un diagnóstico real.</p>
+            <div class="radar-visual">
+                <div class="radar-ring r1">R</div>
+                <div class="radar-ring r2">A</div>
+                <div class="radar-ring r3">D</div>
+                <div class="radar-ring r4">A</div>
+                <div class="radar-ring r5">R</div>
+            </div>
+            <p class="description">El Modelo RADAR mide los 5 niveles de madurez en IA aplicada a operaciones retail. Desde el reconocimiento inicial hasta los resultados transformadores.</p>
+            <button class="btn-primary" onclick="startQuiz()">Empezar diagnóstico →</button>
+            <p class="credit">Por <strong>Sergio Montalvillo</strong> · Head of Transport & Logistics</p>
+        </div>
+    </div>
+
+    <!-- QUESTIONS -->
+    <div id="screen-quiz" class="screen">
+        <div class="container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+            <div class="question-counter" id="q-counter">Pregunta 1 de 5</div>
+            <div class="question-area" id="question-area">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- RESULTS -->
+    <div id="screen-results" class="screen">
+        <div class="container">
+            <div class="badge result-badge" id="result-badge">TU NIVEL</div>
+            <div class="score-circle" id="score-circle">
+                <span class="score-number" id="score-number">0</span>
+                <span class="score-label">/ 25</span>
+            </div>
+            <h2 id="result-level">Nivel R — Reconocimiento</h2>
+            <p class="result-desc" id="result-desc"></p>
+
+            <div class="radar-chart" id="radar-chart">
+                <!-- 5 bars for R-A-D-A-R -->
+            </div>
+
+            <div class="result-card" id="result-card">
+                <h3>Tu siguiente paso</h3>
+                <p id="result-action"></p>
+            </div>
+
+            <div class="cta-section">
+                <a href="assets/modelo-radar-sergio-montalvillo.pdf" target="_blank" class="btn-primary">📄 Descargar Guía Modelo RADAR (PDF)</a>
+                <a href="https://www.linkedin.com/in/sergiomontalvillo" target="_blank" class="btn-secondary">Conecta conmigo en LinkedIn →</a>
+            </div>
+
+            <p class="credit">Modelo RADAR · Sergio Montalvillo</p>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
