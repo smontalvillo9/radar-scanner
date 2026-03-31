@@ -71,5 +71,18 @@
     </div>
 
     <script src="js/app.js"></script>
+    <!-- GoatCounter analytics (privacy-friendly, no cookies) -->
+    <script data-goatcounter="https://sergio-linkedin.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <script>
+    // Track PDF download as event
+    document.addEventListener('click', function(e) {
+        var link = e.target.closest('a[href*=".pdf"]');
+        if (link) {
+            if (window.goatcounter && window.goatcounter.count) {
+                window.goatcounter.count({ path: '/radar-scanner/download-pdf', title: 'PDF Download: Modelo RADAR', event: true });
+            }
+        }
+    });
+    </script>
 </body>
 </html>
